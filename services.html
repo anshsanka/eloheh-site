@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eloheh — Our Services</title>
+  <style>
+    /* Reset & base */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { display: flex; font-family: Arial, sans-serif; background: #f2f5f5; color: #333; }
+
+    /* Sidebar */
+    nav {
+      width: 220px;
+      background: #008080;
+      min-height: 100vh;
+      padding-top: 40px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+    }
+    nav h2 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+    nav ul { list-style: none; }
+    nav li + li { margin-top: 12px; }
+    nav a {
+      display: block;
+      color: #e0f7f7;
+      text-decoration: none;
+      padding: 8px 20px;
+      border-left: 4px solid transparent;
+      transition: background .2s, border-color .2s;
+    }
+    nav a:hover,
+    nav a.active {
+      background: rgba(255,255,255,0.1);
+      border-color: #e0f7f7;
+    }
+
+    /* Main content */
+    main {
+      margin-left: 220px;
+      padding: 40px;
+      flex: 1;
+    }
+    header.main-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header.main-header h1 {
+      font-size: 2rem;
+      color: #008080;
+      margin-bottom: 8px;
+    }
+    header.main-header p {
+      font-size: 1rem;
+      color: #555;
+      font-style: italic;
+    }
+
+    /* Service cards */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .service-card {
+      background: #fff;
+      border: 1px solid #cde;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .service-card h3 {
+      color: #008080;
+      margin-bottom: 8px;
+    }
+    .service-card p {
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+
+    /* Lists */
+    ol, ul {
+      margin: 12px 0 24px 20px;
+    }
+    li { margin-bottom: 6px; }
+
+    /* Links & download */
+    .links {
+      margin-top: 30px;
+    }
+    .links p, .links form {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .links a {
+      color: #008080;
+      text-decoration: underline;
+      margin: 0 8px;
+    }
+    .links form button {
+      background: #008080;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Text highlights */
+    .underline { text-decoration: underline; }
+    .italic    { font-style: italic; }
+    .bold      { font-weight: bold; }
+    .blue      { color: #008080; }
+    .green     { color: #178a5e; }
+    .text-small{ font-size: .92rem; }
+    .text-large{ font-size: 1.1rem; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: .9rem;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar navigation -->
+  <nav>
+    <h2>Eloheh Healthcare</h2>
+    <ul>
+      <li><a href="index.html">Team Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a class="active" href="services.html">Services</a></li>
+      <li><a href="management.html">Management</a></li>
+      <li><a href="story.html">Story &amp; History</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main>
+    <header class="main-header">
+      <h1>Our Services</h1>
+      <p class="italic">“Promoting <span class="bold underline">Well-being</span> for Every Community”</p>
+    </header>
+
+    <!-- Services grid -->
+    <section class="services-grid">
+      <div class="service-card">
+        <h3>ElohehCare Wellness Kits</h3>
+        <p><span class="bold">What:</span> Personalized monthly boxes of supplements, teas, aromatherapy, and self-care items.</p>
+        <p><span class="bold">Why:</span> To <span class="green">boost immunity</span>, manage stress, and support restful sleep.</p>
+      </div>
+      <div class="service-card">
+        <h3>Eloheh Virtual Clinic</h3>
+        <p><span class="bold">What:</span> Secure telehealth visits with doctors, therapists, and dietitians.</p>
+        <p><span class="bold">Why:</span> Deliver <span class="blue">on-demand care</span>—from prescriptions to mental health—anywhere.</p>
+      </div>
+      <div class="service-card">
+        <h3>Eloheh Home Diagnostics</h3>
+        <p><span class="bold">What:</span> Mail-in kits for glucose, food sensitivities, hormone &amp; vitamin panels.</p>
+        <p><span class="bold">Why:</span> Empower private, proactive health monitoring without clinic visits.</p>
+      </div>
+      <div class="service-card">
+        <h3>Eloheh Health Tracker App</h3>
+        <p><span class="bold">What:</span> Free app that syncs with wearables to log symptoms, meds, and test results.</p>
+        <p><span class="bold">Why:</span> Give users one secure hub for all their health data and reminders.</p>
+      </div>
+      <div class="service-card">
+        <h3>Eloheh Community Wellness</h3>
+        <p><span class="bold">What:</span> Workshops, webinars, and fitness classes focused on preventive health.</p>
+        <p><span class="bold">Why:</span> Build knowledge &amp; support networks in underserved neighborhoods.</p>
+      </div>
+    </section>
+
+    <!-- How to get started (ordered list) -->
+    <h2>How to Get Started</h2>
+    <ol>
+      <li>Select a service above.</li>
+      <li>Book online or call our office.</li>
+      <li>Complete your intake forms.</li>
+      <li>Receive your service—in person, virtually, or by mail.</li>
+    </ol>
+
+    <!-- Key benefits (unordered list) -->
+    <h2>Key Benefits</h2>
+    <ul>
+      <li>Integrated care across services</li>
+      <li>Personalized wellness plans</li>
+      <li>Convenient access—wherever you are</li>
+      <li>Focus on prevention &amp; education</li>
+    </ul>
+
+    <!-- Links & download button -->
+    <section class="links">
+      <p class="text-small">
+        <a href="index.html">Home</a> |
+        <a href="https://www.cdc.gov/quality/" target="_blank" rel="noopener noreferrer">CDC Quality</a> |
+        <a href="mailto:anshul@example.com">Contact Me</a>
+      </p>
+      <form action="assets/Eloheh_Services.csv" method="get">
+        <button type="submit">Download Services CSV</button>
+      </form>
+      <p class="text-small">Ensure <code>assets/Eloheh_Services.csv</code> is in your repo.</p>
+    </section>
+
+    <!-- Auto-updating last-modified date -->
+    <footer>
+      <p id="last-modified">Date last modified: …</p>
+    </footer>
+  </main>
+
+  <script>
+    const lm = new Date(document.lastModified);
+    document.getElementById('last-modified').textContent =
+      "Date last modified: " + (isNaN(lm) ? document.lastModified : lm.toLocaleString());
+  </script>
+</body>
+</html>
